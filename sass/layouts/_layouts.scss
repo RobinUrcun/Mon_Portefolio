@@ -1,0 +1,80 @@
+// BODY //
+
+.homepage_background{
+    background-image: url("../asset/background_index.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+}   
+
+/* NAV */
+
+header .top_navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: white 0px 3px 5px;
+    transition: 0.5s;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        }
+    li{
+        font-size: 20px;
+        transition: 0.5s;
+        a, a:visited{
+            text-decoration: none;
+            color: rgb(74, 74, 74);
+            font-size: 30px;
+        }
+ 
+    }
+
+}
+// FIN de NAV //
+
+// FOOTER //
+
+footer{
+    width: 100%;
+    margin: 150px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    .footer_contact ul{
+        margin: 0;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        li{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        img{
+            width: 80px;
+            filter: invert(1);
+        }
+    }
+}
+
+.footer_enveloppe_hover{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    transform: scale(0);
+}
+
+// PAGE MAIN //
