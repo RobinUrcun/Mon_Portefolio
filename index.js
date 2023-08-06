@@ -10,6 +10,9 @@ const sectionExperiences = document.getElementById("section_experiences")
 const label_etudes = document.getElementById("label_etudes")
 const label_experiences = document.getElementById("label_experiences")
 let li_navbar = document.querySelectorAll(".top_navbar ul li")
+const competences_card = document.getElementsByClassName("competences_card")
+const card = document.getElementsByClassName("card")
+
 
 for(let i = 0; i < li_navbar.length; i++){
     li_navbar[i].addEventListener("mouseenter", () => {
@@ -29,7 +32,7 @@ button_up.addEventListener("click", () => {
     })
 })
 window.addEventListener("scroll", (e) =>{
-    if ( window.scrollY > 400){
+    if ( window.scrollY > 200){
         button_up.style.bottom = "30px";  
         nav_bar.style.top = "-50px"
     }
@@ -55,5 +58,18 @@ for (let index = 0; index < btnRadio.length; index++){
 
 
         }
+    })
+}
+
+// EFFET CARDS //
+
+for(let i = 0; i < competences_card.length; i++){
+    competences_card[i].addEventListener("mouseenter", () => {
+        card[i].style.transform = "rotateY(180deg)"
+    })
+}
+for(let i = 0; i < competences_card.length; i++){
+    competences_card[i].addEventListener("mouseleave", () => {
+        card[i].style.transform = "rotateY(0)"
     })
 }
