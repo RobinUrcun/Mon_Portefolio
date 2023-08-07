@@ -36,7 +36,7 @@
         cursor: pointer;
         animation: Bordure_btn_style 2s linear infinite;
         background-color: black;
-        font-size: 50px;
+        font-size: 4vw;
         text-align: center;
         .btn_shadow{
             content: "";
@@ -114,7 +114,7 @@
         right: 0;
         opacity: 0.7;
         filter: blur(1em);
-        transform: translateY(100%) rotateX(95deg) scale(1.1, 0.60);
+        transform: translateY(100%) rotateX(95deg) scale(0.8, 0.60);
         background-color: $colorBlueLight;
         pointer-events: none;
     }

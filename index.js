@@ -18,8 +18,9 @@ const effet_btn_shadow_etudes = document.querySelector("#label_etudes .effet_btn
 const effet_btn_shadow_experiences = document.querySelector("#label_experiences .effet_btn_shadow")
 const btn_shadow_etudes = document.querySelector("#label_etudes .btn_shadow")
 const btn_shadow_experiences = document.querySelector("#label_experiences .btn_shadow")
-
-
+const box_effet_telephone = document.getElementById("box_effet_telephone")
+const effet_telephone = document.getElementById("effet_telephone")
+const effet_telephone_img = document.getElementById("effet_telephone_img")
 
 for(let i = 0; i < li_navbar.length; i++){
     li_navbar[i].addEventListener("mouseenter", () => {
@@ -100,3 +101,18 @@ for(let i = 0; i < competences_card.length; i++){
         card[i].style.transform = "rotateY(0)"
     })
 }
+
+// EFFET TELEPHONE FOOTER //
+
+effet_telephone.addEventListener("mouseenter", () => {
+    effet_telephone_img.style.transform ="scale(0)"
+    box_effet_telephone.style.transform ="scale(1)"
+    box_effet_telephone.style.opacity ="1"
+
+
+})
+
+effet_telephone.addEventListener("mouseleave", () => {
+    effet_telephone_img.style.transform ="scale(1)"
+    box_effet_telephone.style.transform ="scale(0)"
+})
