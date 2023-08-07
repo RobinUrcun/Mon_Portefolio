@@ -282,6 +282,21 @@ footer .footer_contact ul img {
   box-shadow: inset 0px 0px 0.5em 0px hsl(186, 100%, 69%);
   animation: Bordure_btn_style 2s linear infinite;
   background-color: black;
+  position: relative;
+  perspective: 200px;
+}
+#section_etudes li .li_shadow, #section_experiences li .li_shadow {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(100%) rotateX(95deg) scale(1.1, 0.6);
+  background-color: hsl(186, 100%, 69%);
+  pointer-events: none;
 }
 #section_etudes li:nth-child(2), #section_experiences li:nth-child(2) {
   animation-duration: 5s;

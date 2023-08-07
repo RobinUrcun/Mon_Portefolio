@@ -95,19 +95,36 @@
 
 // SECTION ETUDES ET EXPERIENCES PAGE CV //
 
-#section_etudes li, #section_experiences li{
+#section_etudes, #section_experiences{
+    li{
     color: $colorBlueLight;
     border: 5px solid $colorBlueLight;
     box-shadow: inset 0px 0px 0.5em 0px $colorBlueLight;
     animation: Bordure_btn_style 2s linear infinite;
     background-color: black;
-    &:nth-child(1){
+    position: relative;
+    perspective: 200px;
+
+    .li_shadow{
+        content: "";
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.7;
+        filter: blur(1em);
+        transform: translateY(100%) rotateX(95deg) scale(1.1, 0.60);
+        background-color: $colorBlueLight;
+        pointer-events: none;
     }
+
     &:nth-child(2){
         animation-duration: 5s;
     }
     &:nth-child(3){
         animation-duration: .5s;
+    }
     }
 }
 
