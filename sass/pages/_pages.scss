@@ -35,7 +35,7 @@
         border-radius: 15px;
         cursor: pointer;
         animation: Bordure_btn_style 2s linear infinite;
-        background: black;
+        background-color: black;
         font-size: 50px;
         text-align: center;
         .btn_shadow{
@@ -48,7 +48,7 @@
             opacity: 0.7;
             filter: blur(1em);
             transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
-            background: $colorBlueLight;
+            background-color: $colorBlueLight;
             pointer-events: none;
         }
         .effet_btn_shadow{
@@ -61,8 +61,12 @@
             opacity: 0;
             z-index: -1;
             background-color: $colorBlueLight;
-            box-shadow: 0 0 2em 0.2em $colorBlueLight;
+            box-shadow: 0 0 70px 6px $colorBlueLight;
             transition: opacity 100ms linear;
+        }
+
+        .opacity{
+            opacity: 1;
         }
 
         .effet_texte_un{
@@ -89,7 +93,23 @@
     }
 }
 
+// SECTION ETUDES ET EXPERIENCES PAGE CV //
 
+#section_etudes li, #section_experiences li{
+    color: $colorBlueLight;
+    border: 5px solid $colorBlueLight;
+    box-shadow: inset 0px 0px 0.5em 0px $colorBlueLight;
+    animation: Bordure_btn_style 2s linear infinite;
+    background-color: black;
+    &:nth-child(1){
+    }
+    &:nth-child(2){
+        animation-duration: 5s;
+    }
+    &:nth-child(3){
+        animation-duration: .5s;
+    }
+}
 
 // AUTRES SECTIONS //
 

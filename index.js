@@ -14,8 +14,10 @@ const competences_card = document.getElementsByClassName("competences_card")
 const card = document.getElementsByClassName("card")
 const text_etudes = document.querySelectorAll("#label_etudes span")
 const text_experiences = document.querySelectorAll("#label_experiences span")
-const effet_btn_shadow = document.getElementsByClassName("effet_btn_shadow")
-console.log(effet_btn_shadow);
+const effet_btn_shadow_etudes = document.querySelector("#label_etudes .effet_btn_shadow")
+const effet_btn_shadow_experiences = document.querySelector("#label_experiences .effet_btn_shadow")
+const btn_shadow_etudes = document.querySelector("#label_etudes .btn_shadow")
+const btn_shadow_experiences = document.querySelector("#label_experiences .btn_shadow")
 
 
 
@@ -54,12 +56,17 @@ for (let index = 0; index < btnRadio.length; index++){
             sectionExperiences.style.display = "block"
             label_experiences.classList.toggle("box_fin_annimation")
             label_etudes.classList.toggle("box_fin_annimation")
+            effet_btn_shadow_experiences.style.opacity = "1"
+            effet_btn_shadow_etudes.style.opacity = "0"
+            btn_shadow_experiences.style.opacity = "1"
+            btn_shadow_etudes.style.opacity = "0.7"
             for (let i = 0; i < text_experiences.length; i++){
                 text_experiences[i].classList.toggle("text_fin_annimation")
             }
             for (let i = 0; i < text_etudes.length; i++){
                 text_etudes[i].classList.toggle("text_fin_annimation")
             }
+
 
         }else{
             sectionEtudes.style.display = "block"
@@ -71,7 +78,12 @@ for (let index = 0; index < btnRadio.length; index++){
             }
             for (let i = 0; i < text_experiences.length; i++){
                 text_experiences[i].classList.toggle("text_fin_annimation")
+                
             }
+            effet_btn_shadow_experiences.style.opacity = "0"
+            effet_btn_shadow_etudes.style.opacity = "1"
+            btn_shadow_experiences.style.opacity = "0.7"
+            btn_shadow_etudes.style.opacity = "1"
         }
     })
 }
