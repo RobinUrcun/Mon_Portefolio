@@ -23,16 +23,17 @@
     <main class="page_main">
         <section class="categorie">
             <label for="etudes" id="label_etudes" class="label box_fin_annimation">
-                <div class="btn_shadow"></div>
-                <div class="effet_btn_shadow opacity"></div><span
-                    class="effet_texte_un text_fin_annimation">Mes</span><span
-                    class="effet_texte_deux text_fin_annimation">études</span>
+                <div class="label_btn_shadow"></div>
+                <div class="btn_full_effect"></div>
+                <span class="text_fin_annimation">Mes</span>
+                <span class="text_fin_annimation">études</span>
             </label>
             <input type="radio" name="btn" id="etudes" value="1" checked>
             <label for="experiences" id="label_experiences" class="label">
-                <div class="btn_shadow"></div>
-                <div class="effet_btn_shadow"></div><span class="effet_texte_un">Mes</span><span
-                    class="effet_texte_deux">expériences</span>
+                <div class="label_btn_shadow"></div>
+                <div class="btn_full_effect"></div>
+                <span>Mes</span>
+                <span>experiences</span>
             </label>
             <input type="radio" name="btn" id="experiences" value="2">
         </section>
@@ -115,9 +116,12 @@
                     <a class="footer_enveloppe" href="mailto:robinurcun@gmail.com"><img
                             src="asset/logo/envelope-solid.svg" alt="une enveloppe"></a>
                 </li>
-                <li class="footer_li_telephone">
-                    <a class="footer_telephone" href="contact.html"><img src="asset/logo/phone-solid.svg"
-                            alt="un telephone"></a>
+                <li class="footer_li_telephone" id="effet_telephone">
+                    <a class="footer_telephone" href="contact.html">
+                        <div class="effet_telephone" id="box_effet_telephone">
+                            <p>indisponible !</p>
+                        </div><img src="asset/logo/phone-solid.svg" alt="un telephone" id="effet_telephone_img">
+                    </a>
                 </li>
 
             </ul>

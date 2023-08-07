@@ -21,7 +21,7 @@
     input{
         display: none;
     }
-    .label{
+    #label_etudes, #label_experiences{
         position: relative;
         font-family: 'Roboto Mono';
         font-style: normal;
@@ -38,58 +38,31 @@
         background-color: black;
         font-size: 4vw;
         text-align: center;
-        .btn_shadow{
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            opacity: 0.7;
-            filter: blur(1em);
-            transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
-            background-color: $colorBlueLight;
-            pointer-events: none;
+        span{
+            @extend .text_flash_style;
+            }
+        & div:nth-child(1){
+            @extend .shadow_box_blue;
         }
-        .effet_btn_shadow{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            opacity: 0;
-            z-index: -1;
-            background-color: $colorBlueLight;
-            box-shadow: 0 0 70px 6px $colorBlueLight;
-            transition: opacity 100ms linear;
+        & div:nth-child(2){
+            @extend .btn_full_effect;
         }
-
-        .opacity{
-            opacity: 1;
+        & span:nth-child(3){
+            animation-duration: 2s;
         }
-
-        .effet_texte_un{
-            text-shadow: 0 0 0.125em $colorBlueLight, 0 0 0.45em $colorBlueLight;
-            animation: text_btn_un_style 3s linear infinite;
-            margin-right: 20px;
-            z-index: 1;
-        }
-        .effet_texte_deux{
-            text-shadow: 0 0 0.125em $colorBlueLight, 0 0 0.45em $colorBlueLight;
-            opacity: 0.5;
-            animation: text_btn_deux_style 2s linear infinite;
+        .text_fin_annimation{
+            color: rgba(0, 0, 0, 1);
+            animation: none;
         }
     }
-    .box_fin_annimation{
+    #label_etudes .box_fin_annimation, #label_experiences .box_fin_annimation{
         color: rgba(0, 0, 0, 1);
         background-color: $colorBlueLight;
         text-shadow: none;
         animation: none;
-        .text_fin_annimation{
-            animation: none;
-            opacity: 1;
-        }
+    }
+    & #label_etudes div:nth-child(2){
+        opacity: 1;
     }
 }
 

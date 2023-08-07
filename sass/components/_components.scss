@@ -1,5 +1,48 @@
+// BORDURE COULEUR BLEU //
 
-//BOUTTON REVENIR AU DEBUT DE LA PAGE //
+// ANNIMATION AU SURVOL OU CLICK //
+
+.btn_full_effect{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: $colorBlueLight;
+    box-shadow: 0 0 70px 6px $colorBlueLight;
+    transition: opacity 100ms linear;
+}
+// CLIGNOTEMENT TEXTE STYLE 1//
+.text_flash_style{
+    text-shadow: 0 0 0.125em $colorBlueLight, 0 0 0.45em $colorBlueLight;
+    animation: text_btn_un_style 3s linear infinite;
+    z-index: 1;
+}
+
+// ARRET DES ANNIMATIONS // 
+
+
+
+// OMBRE BLEU //
+
+.shadow_box_blue{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background-color: $colorBlueLight;
+    pointer-events: none;
+}
+
+//BOUTON REVENIR AU DEBUT DE LA PAGE //
 
 
 .button_up{

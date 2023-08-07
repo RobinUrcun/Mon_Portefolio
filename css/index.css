@@ -97,6 +97,40 @@ body {
   font-weight: 400;
 }
 
+.btn_full_effect, .categorie #label_etudes div:nth-child(2), .categorie #label_experiences div:nth-child(2) {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: hsl(186, 100%, 69%);
+  box-shadow: 0 0 70px 6px hsl(186, 100%, 69%);
+  transition: opacity 100ms linear;
+}
+
+.text_flash_style, .categorie #label_etudes span, .categorie #label_experiences span {
+  text-shadow: 0 0 0.125em hsl(186, 100%, 69%), 0 0 0.45em hsl(186, 100%, 69%);
+  animation: text_btn_un_style 3s linear infinite;
+  z-index: 1;
+}
+
+.shadow_box_blue, .categorie #label_etudes div:nth-child(1), .categorie #label_experiences div:nth-child(1) {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background-color: hsl(186, 100%, 69%);
+  pointer-events: none;
+}
+
 .button_up {
   position: fixed;
   right: 30px;
@@ -229,7 +263,7 @@ footer .footer_contact ul img {
 .categorie input {
   display: none;
 }
-.categorie .label {
+.categorie #label_etudes, .categorie #label_experiences {
   position: relative;
   font-family: "Roboto Mono";
   font-style: normal;
@@ -247,54 +281,20 @@ footer .footer_contact ul img {
   font-size: 4vw;
   text-align: center;
 }
-.categorie .label .btn_shadow {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.7;
-  filter: blur(1em);
-  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
-  background-color: hsl(186, 100%, 69%);
-  pointer-events: none;
+.categorie #label_etudes span:nth-child(3), .categorie #label_experiences span:nth-child(3) {
+  animation-duration: 2s;
 }
-.categorie .label .effet_btn_shadow {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  z-index: -1;
-  background-color: hsl(186, 100%, 69%);
-  box-shadow: 0 0 70px 6px hsl(186, 100%, 69%);
-  transition: opacity 100ms linear;
+.categorie #label_etudes .text_fin_annimation, .categorie #label_experiences .text_fin_annimation {
+  color: rgb(0, 0, 0);
+  animation: none;
 }
-.categorie .label .opacity {
-  opacity: 1;
-}
-.categorie .label .effet_texte_un {
-  text-shadow: 0 0 0.125em hsl(186, 100%, 69%), 0 0 0.45em hsl(186, 100%, 69%);
-  animation: text_btn_un_style 3s linear infinite;
-  margin-right: 20px;
-  z-index: 1;
-}
-.categorie .label .effet_texte_deux {
-  text-shadow: 0 0 0.125em hsl(186, 100%, 69%), 0 0 0.45em hsl(186, 100%, 69%);
-  opacity: 0.5;
-  animation: text_btn_deux_style 2s linear infinite;
-}
-.categorie .box_fin_annimation {
+.categorie #label_etudes .box_fin_annimation, .categorie #label_experiences .box_fin_annimation {
   color: rgb(0, 0, 0);
   background-color: hsl(186, 100%, 69%);
   text-shadow: none;
   animation: none;
 }
-.categorie .box_fin_annimation .text_fin_annimation {
-  animation: none;
+.categorie #label_etudes div:nth-child(2) {
   opacity: 1;
 }
 
