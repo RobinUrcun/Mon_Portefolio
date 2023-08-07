@@ -55,30 +55,30 @@ for (let index = 0; index < btnRadio.length; index++){
         if(e.target.value == 2){
             sectionEtudes.style.display = "none"
             sectionExperiences.style.display = "block"
-            label_experiences.classList.toggle("box_fin_annimation")
-            label_etudes.classList.toggle("box_fin_annimation")
+            label_experiences.classList.toggle("label_box_fin_annimation")
+            label_etudes.classList.toggle("label_box_fin_annimation")
             btn_full_effect_experiences.style.opacity = "1"
             btn_full_effect_etudes.style.opacity = "0"
             btn_shadow_experiences.style.opacity = "1"
             btn_shadow_etudes.style.opacity = "0.7"
             for (let i = 0; i < text_experiences.length; i++){
-                text_experiences[i].classList.toggle("text_fin_annimation")
+                text_experiences[i].classList.toggle("text_end_flash_blue")
             }
             for (let i = 0; i < text_etudes.length; i++){
-                text_etudes[i].classList.toggle("text_fin_annimation")
+                text_etudes[i].classList.toggle("text_end_flash_blue")
             }
 
 
         }else{
             sectionEtudes.style.display = "block"
             sectionExperiences.style.display = "none"
-            label_experiences.classList.toggle("box_fin_annimation")
-            label_etudes.classList.toggle("box_fin_annimation")
+            label_experiences.classList.toggle("label_box_fin_annimation")
+            label_etudes.classList.toggle("label_box_fin_annimation")
             for (let i = 0; i < text_etudes.length; i++){
-                text_etudes[i].classList.toggle("text_fin_annimation")
+                text_etudes[i].classList.toggle("text_end_flash_blue")
             }
             for (let i = 0; i < text_experiences.length; i++){
-                text_experiences[i].classList.toggle("text_fin_annimation")
+                text_experiences[i].classList.toggle("text_end_flash_blue")
                 
             }
             btn_full_effect_experiences.style.opacity = "0"

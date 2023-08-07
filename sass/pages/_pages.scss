@@ -29,15 +29,13 @@
         color: $colorBlueLight;
         perspective: 100px;
         width: 30%;
-        border: 5px solid $colorBlueLight;
-        box-shadow: inset 0px 0px 0.5em 0px $colorBlueLight;
         padding: 20px auto;
         border-radius: 15px;
         cursor: pointer;
-        animation: Bordure_btn_style 2s linear infinite;
         background-color: black;
         font-size: 4vw;
         text-align: center;
+        @extend .box_flash_blue;
         span{
             @extend .text_flash_style;
             }
@@ -50,19 +48,15 @@
         & span:nth-child(3){
             animation-duration: 2s;
         }
-        .text_fin_annimation{
-            color: rgba(0, 0, 0, 1);
-            animation: none;
+    }
+    .label_box_fin_annimation, .label_box_fin_annimation{
+        @extend .box_end_flash_blue
+        
+    }
+    & #label_etudes{
+        div:nth-child(2){
+            opacity: 1;
         }
-    }
-    #label_etudes .box_fin_annimation, #label_experiences .box_fin_annimation{
-        color: rgba(0, 0, 0, 1);
-        background-color: $colorBlueLight;
-        text-shadow: none;
-        animation: none;
-    }
-    & #label_etudes div:nth-child(2){
-        opacity: 1;
     }
 }
 

@@ -15,7 +15,17 @@
     box-shadow: 0 0 70px 6px $colorBlueLight;
     transition: opacity 100ms linear;
 }
-// CLIGNOTEMENT TEXTE STYLE 1//
+
+// CLIGNOTEMENT BORDER BLEU //
+
+.box_flash_blue{
+    border: 5px solid $colorBlueLight;
+    box-shadow: inset 0px 0px 0.5em 0px;
+    animation: Bordure_btn_style 2s linear infinite;
+}
+
+// CLIGNOTEMENT TEXTE STYLE 1 //
+
 .text_flash_style{
     text-shadow: 0 0 0.125em $colorBlueLight, 0 0 0.45em $colorBlueLight;
     animation: text_btn_un_style 3s linear infinite;
@@ -23,6 +33,18 @@
 }
 
 // ARRET DES ANNIMATIONS // 
+
+.text_end_flash_blue{
+    color: rgba(0, 0, 0, 1);
+    animation: none !important;
+}
+
+.box_end_flash_blue{
+    color: rgba(0, 0, 0, 1) !important;
+    background-color: $colorBlueLight;
+    text-shadow: none;
+    animation: none !important;
+}
 
 
 

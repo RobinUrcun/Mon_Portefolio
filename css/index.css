@@ -111,10 +111,28 @@ body {
   transition: opacity 100ms linear;
 }
 
+.box_flash_blue, .categorie #label_etudes, .categorie #label_experiences {
+  border: 5px solid hsl(186, 100%, 69%);
+  box-shadow: inset 0px 0px 0.5em 0px;
+  animation: Bordure_btn_style 2s linear infinite;
+}
+
 .text_flash_style, .categorie #label_etudes span, .categorie #label_experiences span {
   text-shadow: 0 0 0.125em hsl(186, 100%, 69%), 0 0 0.45em hsl(186, 100%, 69%);
   animation: text_btn_un_style 3s linear infinite;
   z-index: 1;
+}
+
+.text_end_flash_blue {
+  color: rgb(0, 0, 0);
+  animation: none !important;
+}
+
+.box_end_flash_blue, .categorie .label_box_fin_annimation {
+  color: rgb(0, 0, 0) !important;
+  background-color: hsl(186, 100%, 69%);
+  text-shadow: none;
+  animation: none !important;
 }
 
 .shadow_box_blue, .categorie #label_etudes div:nth-child(1), .categorie #label_experiences div:nth-child(1) {
@@ -271,28 +289,15 @@ footer .footer_contact ul img {
   color: hsl(186, 100%, 69%);
   perspective: 100px;
   width: 30%;
-  border: 5px solid hsl(186, 100%, 69%);
-  box-shadow: inset 0px 0px 0.5em 0px hsl(186, 100%, 69%);
   padding: 20px auto;
   border-radius: 15px;
   cursor: pointer;
-  animation: Bordure_btn_style 2s linear infinite;
   background-color: black;
   font-size: 4vw;
   text-align: center;
 }
 .categorie #label_etudes span:nth-child(3), .categorie #label_experiences span:nth-child(3) {
   animation-duration: 2s;
-}
-.categorie #label_etudes .text_fin_annimation, .categorie #label_experiences .text_fin_annimation {
-  color: rgb(0, 0, 0);
-  animation: none;
-}
-.categorie #label_etudes .box_fin_annimation, .categorie #label_experiences .box_fin_annimation {
-  color: rgb(0, 0, 0);
-  background-color: hsl(186, 100%, 69%);
-  text-shadow: none;
-  animation: none;
 }
 .categorie #label_etudes div:nth-child(2) {
   opacity: 1;
