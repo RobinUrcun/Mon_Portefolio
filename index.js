@@ -12,6 +12,11 @@ const label_experiences = document.getElementById("label_experiences")
 let li_navbar = document.querySelectorAll(".top_navbar ul li")
 const competences_card = document.getElementsByClassName("competences_card")
 const card = document.getElementsByClassName("card")
+const text_etudes = document.querySelectorAll("#label_etudes span")
+const text_experiences = document.querySelectorAll("#label_experiences span")
+const effet_btn_shadow = document.getElementsByClassName("effet_btn_shadow")
+console.log(effet_btn_shadow);
+
 
 
 for(let i = 0; i < li_navbar.length; i++){
@@ -47,16 +52,26 @@ for (let index = 0; index < btnRadio.length; index++){
         if(e.target.value == 2){
             sectionEtudes.style.display = "none"
             sectionExperiences.style.display = "block"
-            label_experiences.style.border = "4px inset #dddddd"
-            label_etudes.style.border = "4px outset #dddddd"
+            label_experiences.classList.toggle("box_fin_annimation")
+            label_etudes.classList.toggle("box_fin_annimation")
+            for (let i = 0; i < text_experiences.length; i++){
+                text_experiences[i].classList.toggle("text_fin_annimation")
+            }
+            for (let i = 0; i < text_etudes.length; i++){
+                text_etudes[i].classList.toggle("text_fin_annimation")
+            }
 
         }else{
             sectionEtudes.style.display = "block"
             sectionExperiences.style.display = "none"
-            label_etudes.style.border = "4px inset #dddddd"
-            label_experiences.style.border = "4px outset #dddddd"
-
-
+            label_experiences.classList.toggle("box_fin_annimation")
+            label_etudes.classList.toggle("box_fin_annimation")
+            for (let i = 0; i < text_etudes.length; i++){
+                text_etudes[i].classList.toggle("text_fin_annimation")
+            }
+            for (let i = 0; i < text_experiences.length; i++){
+                text_experiences[i].classList.toggle("text_fin_annimation")
+            }
         }
     })
 }

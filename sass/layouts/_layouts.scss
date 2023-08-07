@@ -17,6 +17,7 @@ header .top_navbar{
     background-color: white;
     box-shadow: white 0px 3px 5px;
     transition: 0.5s;
+    z-index: 99;
     ul{
         display: flex;
         flex-direction: row;
