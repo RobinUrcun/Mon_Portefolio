@@ -1,5 +1,14 @@
-// MAIN PAGE //
-.homepage_background_2{
+// BACKGROUNDS //
+
+
+.homepage_background{
+    background-color: #048b9a;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}   
+
+.competences_background{
     background-image: url("../asset/background_CV.webp");
     background-size: cover;
     background-attachment: fixed;
@@ -7,12 +16,38 @@
     width: 100%;
 }
 
-.homepage_background_3{
+.cv_background{
     background-color: black;
+    }
+
+.contact_background{
+    background-image: url("../asset/background_contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
-// SECTION CHOIX DE CATEGORIE // 
+.projets_background{
+    background-image: url("../asset/tableau-noir-sale-vert.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
 
+
+                // PAGE MON CV //
+
+
+// SECTION CHOIX DE CATEGORIE // 
+.cv_title{
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-size: 100px;
+    font-weight: 800;
+    color: $colorBlueLight;
+    @extend .text_flash_style;
+
+}
 .categorie {
     display: flex;
     flex-direction: row;
@@ -33,7 +68,7 @@
         border-radius: 15px;
         cursor: pointer;
         background-color: black;
-        font-size: 4vw;
+        font-size: 3vw;
         text-align: center;
         @extend .box_flash_blue;
         span{
@@ -65,12 +100,10 @@
 #section_etudes, #section_experiences{
     li{
     color: $colorBlueLight;
-    border: 5px solid $colorBlueLight;
-    box-shadow: inset 0px 0px 0.5em 0px $colorBlueLight;
-    animation: Bordure_btn_style 2s linear infinite;
     background-color: black;
     position: relative;
     perspective: 200px;
+    @extend .box_flash_blue;
 
     .li_shadow{
         content: "";
@@ -97,7 +130,7 @@
 
 // AUTRES SECTIONS //
 
-.page_main{
+.cv_main{
     display: flex;
     flex-direction: column;    
     & section {
@@ -130,7 +163,7 @@
     }
 }
 
-.page_main{
+.cv_main{
     h1{
         font-size: 50px;
         text-align: center;
@@ -138,6 +171,14 @@
     }
     article{
         width: 40%;
+
+        h3{
+            color: $colorPurpleLight;
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
     }
     aside{
         width: 25%;
@@ -153,8 +194,12 @@
     }
 }
 
-// PAGE COMPETENCE ==> CARDS //
-
+            // PAGE COMPETENCE ==> CARDS //
+.competences_main h1{   
+    font-size: 70px;
+    text-align: center;
+    margin: 70px auto;
+}
 .section_cards{
 
     .rangee{
@@ -212,4 +257,142 @@
         }
     }
     
+}
+
+                // PAGE CONTACT //
+
+.contact {
+    font-family: 'David libre';
+    font-weight: 700;
+    text-shadow: 0 0 0.125em $colorGreenMint, 0 0 0.45em $colorGreenMint;
+    h1{
+        margin: 130px 0 80px 0;
+        font-size: 80px;
+        text-align: center;
+        color: $colorGreenMint;
+    }
+    .zone_saisie{
+        font-size: 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 60px auto 60px 50px;
+
+
+    }
+    span{
+        animation-name: opacity_0_1;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    .zone_saisie .zone_lettre_appear{
+        width: inherit;
+        position: relative;
+        opacity: 0;
+        animation: opacity_0_1 0.5S linear 7.5S forwards;
+
+        .zone_lettre_touch::after{
+            content: "";
+            position: absolute;
+            width: 35px;
+            height: 60px;
+            background-color: rgba(128, 128, 128, 0.2);
+            z-index: -2;
+            right: 0;
+            animation: opacity_0_1 0.2s, flash_letter 0.5s infinite;
+            animation-delay: 5s;
+
+        }
+        
+    }
+
+    form{
+        display: flex;
+        label{
+            font-size: 50px;
+            text-align: center;
+            color: $colorGreenMint;
+            margin-left: 60px;
+            padding-top: 5px;
+        }
+        input{
+            width: 35px;
+            height: 60px;
+            position: relative;
+            font-size: 5vw;
+            background-color: transparent;
+            color: $colorGreenMint;
+            border: none;
+            font-family: 'David libre';
+            font-weight: 700;
+            font-size: 50px;
+            text-shadow: 0 0 0.125em $colorGreenMint, 0 0 0.45em $colorGreenMint;
+            &:focus{
+                outline: none;
+          }
+        }
+
+    }
+    .lettres_space{
+        margin-right: 50px;
+    }
+}
+
+
+                // PAGE MES PROJETS //
+.projets_main{
+    font-family: "Borel";
+    color: white;
+    
+    h1{
+        font-size: 100px;
+        margin: 80px auto 0 auto;
+        text-align: center;
+    }
+}
+
+.projets_main section{
+    display: flex;
+    justify-content: center;
+
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+
+        li{
+            width: 100%;
+        }
+    }
+}
+.projets_main article{
+    display: flex;
+    flex-direction: row;
+    border: 4px white solid;
+    border-radius: 25px;
+    max-height: 300px;
+    overflow: hidden;
+    .projets_text{
+        margin: auto;
+        h3{
+            font-size: 30px;
+            color: #3a8eba;
+        }
+        P{
+            color: rgb(209, 140,131);
+            font-size: 30px;
+
+        }
+    }
+    .projets_text p:nth-child(3){
+        color: green;
+        margin-bottom: 0;
+    }
+
+    img{
+        max-height: 300px;
+    }
 }

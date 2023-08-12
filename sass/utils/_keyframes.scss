@@ -1,3 +1,15 @@
+@keyframes rotation_card {
+  0% {
+      transform: scale(1);
+  }
+  25% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+  
+}
 @keyframes Bordure_btn_style {
     0% {
         opacity: 0.1;
@@ -94,6 +106,28 @@
     87% {
       opacity: 1;
     }
-  }
+}// ANIMATION LETTRE FORMULAIRE DE CONTACT //
 
+@keyframes opacity_0_1 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+@keyframes flash_letter {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
   

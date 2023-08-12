@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site Web</title>
+    
+    
+    <script src="./Mon site Web_files/index.js" defer=""></script>
+<link rel="stylesheet" href="./Mon site Web_files/normalize.css"><link rel="stylesheet" href="./Mon site Web_files/index.css"></head>
+
+<body class="homepage_background">
+    <header>
+        <nav class="top_navbar">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Accueil</a></li>
+                <li><a href="http://127.0.0.1:5500/mon_cv.html">Mon C.V.</a></li>
+                <li><a href="http://127.0.0.1:5500/mes_competences.html">Mes Compétences</a></li>
+                <li><a href="http://127.0.0.1:5500/mes_projets.html">Mes Projets</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="block_menu_deroulant"><img src="./Mon site Web_files/menu.png" alt=""></div>
+    </header>
+    <main class="index_main">
+        <h1>
+            Robin Urcun : Developpeur Web Junior
+        </h1>
+        <section class="premiere_section">
+            <article>
+                <h2>A propos de moi ! </h2>
+                <p>Jeune développeur en apprentissage, j'ai trouvé ma vocation : celle de coder,voir son travail
+                    avancer, etre confronté a des problemes, les resoudres, mais aussi toujours
+                    se tenir jour et apprendre tous les jours !</p>
+                <p>Dynamique et motivé, j'aime que mon travail soit irréprochable ! </p>
+                <p>Je suis habitué à travailler en equipe de par mes anciens travails et apporte une bonne humeur au
+                    sein de l'équipe.</p>
+            </article>
+        </section>
+        <section class="homepage_section_menu">
+            <a href="http://127.0.0.1:5500/mon_cv.html" class="">
+                <article>
+                    <h3>Mon C.V.</h3>
+                    <img src="./Mon site Web_files/cv.png" alt="image de CV">
+                </article>
+            </a>
+            <a href="http://127.0.0.1:5500/mes_competences.html" class="">
+                <article>
+                    <h3>Mes Compétences</h3>
+                    <img src="./Mon site Web_files/competences.png" alt="image de competences">
+
+                </article>
+            </a>
+            <a href="http://127.0.0.1:5500/mes_projets.html" class="">
+                <article>
+                    <h3>Mes Projets</h3>
+                    <img src="./Mon site Web_files/projets.png" alt="image de projets">
+                </article>
+            </a>
+        </section>
+        <div class="button_up" style="bottom: 30px;">
+            <img src="./Mon site Web_files/fleche_top.webp" alt="Fleche vers le haut">
+        </div>
+
+        <footer>
+            <div class="footer_contact">
+                <ul>
+                    <li class="footer_li_enveloppe">
+                        <a class="footer_enveloppe" href="mailto:robinurcun@gmail.com"><img src="./Mon site Web_files/envelope-solid.svg" alt="une enveloppe"></a>
+                    </li>
+                    <li class="footer_li_telephone" id="effet_telephone">
+                        <a class="footer_telephone" href="http://127.0.0.1:5500/contact.html">
+                            <div class="effet_telephone" id="box_effet_telephone">
+                                <p>indisponible !</p>
+                            </div><img src="./Mon site Web_files/phone-solid.svg" alt="un telephone" id="effet_telephone_img">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </footer>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</main></body></html>
