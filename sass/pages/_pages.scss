@@ -95,7 +95,20 @@
     }
 }
 
-// SECTION ETUDES ET EXPERIENCES PAGE CV //
+@media screen and (max-width:700px){
+    .categorie{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        #label_etudes, #label_experiences{
+            width: 80%;
+            font-size: 50px;
+
+        }
+    }
+}
+
+// SECTION CHOIX DE LA CATEGORIE //
 
 #section_etudes, #section_experiences{
     li{
@@ -103,6 +116,7 @@
     background-color: black;
     position: relative;
     perspective: 200px;
+    height: 200px;
     @extend .box_flash_blue;
 
     .li_shadow{
@@ -124,11 +138,14 @@
     }
     &:nth-child(3){
         animation-duration: .5s;
+        aside img{
+            height: 80px;
+        }
     }
     }
 }
 
-// AUTRES SECTIONS //
+//  SECTION ETUDES ET EXPERIENCES PAGE CV  //
 
 .cv_main{
     display: flex;
@@ -186,7 +203,7 @@
         align-items: center;
         justify-content: center;
         img{
-            max-height: 200px;
+            height: 200px;
             max-width: 300px;
             border-radius: 5px;
             box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.567);
@@ -194,7 +211,21 @@
     }
 }
 
+@media screen and (max-width:700px){
+    .cv_main {
+        article{
+            width: 100%;
+            text-align: center;
+        }
+        aside{
+            display: none;
+        }
+    }
+}
+
             // PAGE COMPETENCE ==> CARDS //
+
+
 .competences_main h1{   
     font-size: 70px;
     text-align: center;

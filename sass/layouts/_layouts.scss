@@ -31,6 +31,7 @@ header .top_navbar{
     position: fixed;
     left: 20px;
     top: 20px;
+    z-index: 99;
     cursor: pointer;
     display: none;
     img{

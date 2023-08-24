@@ -228,6 +228,7 @@ header .top_navbar li a, header .top_navbar li a:visited {
   position: fixed;
   left: 20px;
   top: 20px;
+  z-index: 99;
   cursor: pointer;
   display: none;
 }
@@ -388,11 +389,23 @@ footer .footer_contact ul img {
   opacity: 1;
 }
 
+@media screen and (max-width: 700px) {
+  .categorie {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .categorie #label_etudes, .categorie #label_experiences {
+    width: 80%;
+    font-size: 50px;
+  }
+}
 #section_etudes li, #section_experiences li {
   color: rgb(97, 239, 255);
   background-color: black;
   position: relative;
   perspective: 200px;
+  height: 200px;
 }
 #section_etudes li .li_shadow, #section_experiences li .li_shadow {
   content: "";
@@ -412,6 +425,9 @@ footer .footer_contact ul img {
 }
 #section_etudes li:nth-child(3), #section_experiences li:nth-child(3) {
   animation-duration: 0.5s;
+}
+#section_etudes li:nth-child(3) aside img, #section_experiences li:nth-child(3) aside img {
+  height: 80px;
 }
 
 .cv_main {
@@ -466,12 +482,21 @@ footer .footer_contact ul img {
   justify-content: center;
 }
 .cv_main aside img {
-  max-height: 200px;
+  height: 200px;
   max-width: 300px;
   border-radius: 5px;
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.567);
 }
 
+@media screen and (max-width: 700px) {
+  .cv_main article {
+    width: 100%;
+    text-align: center;
+  }
+  .cv_main aside {
+    display: none;
+  }
+}
 .competences_main h1 {
   font-size: 70px;
   text-align: center;
