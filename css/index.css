@@ -503,16 +503,17 @@ footer .footer_contact ul img {
   margin: 70px auto;
 }
 
-.section_cards .rangee {
+.section_cards {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 50px;
 }
-.section_cards .rangee .competences_card {
+.section_cards .competences_card {
   margin: auto 50px;
   position: relative;
-  width: 17%;
+  width: 200px;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -520,14 +521,14 @@ footer .footer_contact ul img {
   perspective: 2000px;
   perspective-origin: top;
 }
-.section_cards .rangee .competences_card .card {
+.section_cards .competences_card .card {
   position: relative;
   height: 100%;
   width: 100%;
   transform-style: preserve-3d;
   transition: transform 0.7s ease-in-out;
 }
-.section_cards .rangee .competences_card .card .card_front, .section_cards .rangee .competences_card .card .card_back {
+.section_cards .competences_card .card .card_front, .section_cards .competences_card .card .card_back {
   background-color: rgba(128, 128, 128, 0.6);
   border: 2px #c0c0c0 solid;
   border-radius: 10px;
@@ -541,11 +542,11 @@ footer .footer_contact ul img {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-.section_cards .rangee .competences_card .card .card_front img, .section_cards .rangee .competences_card .card .card_back img {
+.section_cards .competences_card .card .card_front img, .section_cards .competences_card .card .card_back img {
   height: 150px;
 }
-.section_cards .rangee .competences_card .card .card_back {
-  background-color: rgba(128, 128, 128, 0.6);
+.section_cards .competences_card .card .card_back {
+  background-color: rgb(128, 128, 128);
   font-size: 20px;
   font-weight: 700;
   text-align: center;
