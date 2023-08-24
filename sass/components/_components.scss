@@ -61,6 +61,10 @@
     transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
     background-color: $colorBlueLight;
     pointer-events: none;
+    -webkit-transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    -moz-transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    -ms-transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    -o-transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
 }
 
 //BOUTON REVENIR AU DEBUT DE LA PAGE //

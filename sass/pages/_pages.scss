@@ -9,7 +9,7 @@
 }   
 
 .competences_background{
-    background-image: url("../asset/background_CV.webp");
+    background-image: url("../asset/background_Competences.webp");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -120,17 +120,10 @@
     @extend .box_flash_blue;
 
     .li_shadow{
-        content: "";
-        position: absolute;
-        top: 50%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0.7;
-        filter: blur(1em);
+        @extend .shadow_box_blue;
         transform: translateY(100%) rotateX(95deg) scale(0.8, 0.60);
-        background-color: $colorBlueLight;
-        pointer-events: none;
+        top: 50%;
+
     }
 
     &:nth-child(2){
@@ -307,7 +300,6 @@
         color: $colorGreenMint;
     }
     .zone_saisie{
-        font-size: 50px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -349,20 +341,18 @@
             text-align: center;
             color: $colorGreenMint;
             margin-left: 60px;
-            padding-top: 5px;
         }
         input{
             width: 35px;
             height: 60px;
             position: relative;
-            font-size: 5vw;
             background-color: transparent;
             color: $colorGreenMint;
             border: none;
             font-family: 'David libre';
             font-weight: 700;
             font-size: 50px;
-            text-shadow: 0 0 0.125em $colorGreenMint, 0 0 0.45em $colorGreenMint;
+            text-shadow: 0 0 0.125em $colorGreenMint, 0 0 0em $colorGreenMint;
             &:focus{
                 outline: none;
           }
@@ -374,6 +364,28 @@
     }
 }
 
+@media screen and (max-width:700px){
+    .contact{
+        h1{
+            font-size: 25px;
+        }
+        form {
+        
+            label{
+                font-size: 20px;
+            }
+            input{
+                font-size: 20px;
+                height: 20px;
+                width: 11px;
+            }
+        }
+        .zone_saisie .zone_lettre_appear .zone_lettre_touch::after{
+            height: 20px;
+            width: 11px;
+        } 
+    }
+}
 
                 // PAGE MES PROJETS //
 .projets_main{

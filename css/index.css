@@ -164,7 +164,7 @@ body {
   animation: none !important;
 }
 
-.shadow_box_blue, .categorie #label_etudes div:nth-child(1), .categorie #label_experiences div:nth-child(1) {
+.shadow_box_blue, #section_etudes li .li_shadow, #section_experiences li .li_shadow, .categorie #label_etudes div:nth-child(1), .categorie #label_experiences div:nth-child(1) {
   content: "";
   position: absolute;
   top: 0;
@@ -176,6 +176,10 @@ body {
   transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
   background-color: rgb(97, 239, 255);
   pointer-events: none;
+  -webkit-transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  -moz-transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  -ms-transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  -o-transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
 }
 
 .button_up {
@@ -325,7 +329,7 @@ footer .footer_contact ul img {
 }
 
 .competences_background {
-  background-image: url("../asset/background_CV.webp");
+  background-image: url("../asset/background_Competences.webp");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -408,17 +412,8 @@ footer .footer_contact ul img {
   height: 200px;
 }
 #section_etudes li .li_shadow, #section_experiences li .li_shadow {
-  content: "";
-  position: absolute;
-  top: 50%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.7;
-  filter: blur(1em);
   transform: translateY(100%) rotateX(95deg) scale(0.8, 0.6);
-  background-color: rgb(97, 239, 255);
-  pointer-events: none;
+  top: 50%;
 }
 #section_etudes li:nth-child(2), #section_experiences li:nth-child(2) {
   animation-duration: 5s;
@@ -578,7 +573,6 @@ footer .footer_contact ul img {
   color: #17aa48;
 }
 .contact .zone_saisie {
-  font-size: 50px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -615,20 +609,18 @@ footer .footer_contact ul img {
   text-align: center;
   color: #17aa48;
   margin-left: 60px;
-  padding-top: 5px;
 }
 .contact form input {
   width: 35px;
   height: 60px;
   position: relative;
-  font-size: 5vw;
   background-color: transparent;
   color: #17aa48;
   border: none;
   font-family: "David libre";
   font-weight: 700;
   font-size: 50px;
-  text-shadow: 0 0 0.125em #17aa48, 0 0 0.45em #17aa48;
+  text-shadow: 0 0 0.125em #17aa48, 0 0 0em #17aa48;
 }
 .contact form input:focus {
   outline: none;
@@ -637,6 +629,23 @@ footer .footer_contact ul img {
   margin-right: 50px;
 }
 
+@media screen and (max-width: 700px) {
+  .contact h1 {
+    font-size: 25px;
+  }
+  .contact form label {
+    font-size: 20px;
+  }
+  .contact form input {
+    font-size: 20px;
+    height: 20px;
+    width: 11px;
+  }
+  .contact .zone_saisie .zone_lettre_appear .zone_lettre_touch::after {
+    height: 20px;
+    width: 11px;
+  }
+}
 .projets_main {
   font-family: "Borel";
   color: white;

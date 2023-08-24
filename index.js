@@ -173,13 +173,28 @@ for (let i = 0; i < contact_lettres.length; i++){
 }
 
 // PAGE CONTACT //
-for ( let i = 0; i < zone_saisie_contenu.length; i++){
-    zone_saisie_contenu[i].addEventListener('keydown', () =>{
-        let string_number = zone_saisie_contenu[i].value.length
-        console.log(string_number);
-        let calc_width = (string_number + 1) * 25
-        zone_saisie_contenu[i].style.width = `${calc_width}px`
-    })
+
+if(window.matchMedia("(max-width: 700px)").matches){
+    for ( let i = 0; i < zone_saisie_contenu.length; i++){
+        zone_saisie_contenu[i].addEventListener('keydown', () =>{
+            let string_number = zone_saisie_contenu[i].value.length
+            console.log(string_number);
+            let calc_width = (string_number + 1) * 10
+            zone_saisie_contenu[i].style.width = `${calc_width}px`
+        })
+        
+    }
+}
+else{
+    for ( let i = 0; i < zone_saisie_contenu.length; i++){
+        zone_saisie_contenu[i].addEventListener('keydown', () =>{
+            let string_number = zone_saisie_contenu[i].value.length
+            console.log(string_number);
+            let calc_width = (string_number + 1) * 25
+            zone_saisie_contenu[i].style.width = `${calc_width}px`
+        })
+        
+    }
     
 }
 formulaire.addEventListener("submit", (e) => {
