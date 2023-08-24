@@ -237,8 +237,8 @@
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 50px;
+    column-gap: 50px;
     .competences_card{
-        margin: auto 50px;
         position: relative;
         width: 200px;
         height: 300px;
@@ -286,7 +286,11 @@
 
 @media screen and (max-width:700px){
     .section_cards .competences_card{
-        width: 30%;
+        width: 35%;
+        height: 250px;
+        .card .card_front img{
+            height: 100px;
+        }
     }
 }
 
