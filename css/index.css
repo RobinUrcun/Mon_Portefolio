@@ -556,6 +556,11 @@ footer .footer_contact ul img {
   transform: rotateY(180deg);
 }
 
+@media screen and (max-width: 700px) {
+  .section_cards .competences_card {
+    width: 30%;
+  }
+}
 .contact {
   font-family: "David libre";
   font-weight: 700;
