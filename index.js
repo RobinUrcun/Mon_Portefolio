@@ -51,13 +51,6 @@ block_menu_deroulant.addEventListener("click", () =>{
     nav_bar.style.left = "0"
     main.style.filter = "blur(2px)"
 })
-main.addEventListener("click", () =>{
-    block_menu_deroulant.style.display = "block"
-    nav_bar.style.left = "-50%"
-    main.style.filter = "none"
-
-})
-
 if(window.matchMedia("(max-width: 700px)").matches){
     window.addEventListener("scroll", (e) =>{
         if ( window.scrollY > 200){
@@ -67,6 +60,13 @@ if(window.matchMedia("(max-width: 700px)").matches){
             button_up.style.bottom = "-80px";  
         }
     })
+    main.addEventListener("click", () =>{
+        block_menu_deroulant.style.display = "block"
+        nav_bar.style.left = "-50%"
+        main.style.filter = "none"
+    
+    })
+    
 }
 else{
     window.addEventListener("scroll", (e) =>{
