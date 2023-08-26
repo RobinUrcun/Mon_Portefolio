@@ -657,7 +657,7 @@ footer .footer_contact ul img {
 }
 .projets_main h1 {
   font-size: 100px;
-  margin: 80px auto 0 auto;
+  margin: 80px auto 30px auto;
   text-align: center;
 }
 
@@ -683,6 +683,7 @@ footer .footer_contact ul img {
   border-radius: 25px;
   max-height: 300px;
   overflow: hidden;
+  text-align: center;
 }
 .projets_main article .projets_text {
   margin: auto;
@@ -703,6 +704,21 @@ footer .footer_contact ul img {
   max-height: 300px;
 }
 
+@media screen and (max-width: 700px) {
+  .projets_main h1 {
+    font-size: 50px;
+  }
+  .projets_main article {
+    max-height: 150px;
+  }
+  .projets_main article .projets_text h3, .projets_main article .projets_text p {
+    font-size: 15px;
+  }
+  .projets_main img {
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
 .index_main {
   padding-top: 20px;
   margin: 0;
