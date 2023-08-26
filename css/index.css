@@ -576,7 +576,7 @@ footer .footer_contact ul img {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin: 60px auto 60px 50px;
+  margin: 60px auto 60px 100px;
 }
 .contact span {
   animation-name: opacity_0_1;
@@ -608,7 +608,6 @@ footer .footer_contact ul img {
   font-size: 50px;
   text-align: center;
   color: #17aa48;
-  margin-left: 60px;
 }
 .contact form input {
   width: 35px;
@@ -631,7 +630,7 @@ footer .footer_contact ul img {
 
 @media screen and (max-width: 700px) {
   .contact h1 {
-    font-size: 25px;
+    font-size: 24px;
   }
   .contact form label {
     font-size: 20px;
@@ -644,6 +643,12 @@ footer .footer_contact ul img {
   .contact .zone_saisie .zone_lettre_appear .zone_lettre_touch::after {
     height: 20px;
     width: 11px;
+  }
+  .contact .zone_saisie {
+    margin: 60px auto 60px 10px;
+  }
+  .contact .lettres_space {
+    margin-right: 10px;
   }
 }
 .projets_main {

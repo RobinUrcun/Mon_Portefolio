@@ -303,7 +303,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        margin: 60px auto 60px 50px;
+        margin: 60px auto 60px 100px;
 
 
     }
@@ -340,7 +340,6 @@
             font-size: 50px;
             text-align: center;
             color: $colorGreenMint;
-            margin-left: 60px;
         }
         input{
             width: 35px;
@@ -367,7 +366,7 @@
 @media screen and (max-width:700px){
     .contact{
         h1{
-            font-size: 25px;
+            font-size: 24px;
         }
         form {
         
@@ -383,7 +382,14 @@
         .zone_saisie .zone_lettre_appear .zone_lettre_touch::after{
             height: 20px;
             width: 11px;
-        } 
+        }
+        .zone_saisie{
+            margin: 60px auto 60px 10px;
+
+        }
+        .lettres_space{
+        margin-right: 10px;
+    }
     }
 }
 
