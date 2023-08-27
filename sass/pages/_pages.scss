@@ -95,16 +95,22 @@
     }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
     .categorie{
         flex-direction: column;
         align-items: center;
         gap: 50px;
         #label_etudes, #label_experiences{
             width: 80%;
-            font-size: 45px;
+            font-size: 30px;
 
         }
+    }
+}
+
+@media screen and (max-width:375px){
+    .categorie #label_etudes, .categorie #label_experiences{
+        font-size: 25px;
     }
 }
 
@@ -175,9 +181,9 @@
 
 .cv_main{
     h1{
-        font-size: 50px;
+        font-size: 70px;
         text-align: center;
-        margin: 70px auto 0 auto;
+        margin: 70px auto 30px auto;
     }
     article{
         width: 40%;
@@ -204,7 +210,7 @@
     }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
     .cv_main {
         article{
             width: 100%;
@@ -216,13 +222,22 @@
     }
 }
 
+@media screen and (max-width:425px){
+    .cv_main {
+        h1{
+            font-size: 50px;
+        }
+    }
+}
             // PAGE COMPETENCE ==> CARDS //
 
 
 .competences_main h1{   
     font-size: 70px;
     text-align: center;
-    margin: 70px auto;
+    margin: 70px auto 30px auto;
+    color: lightblue;
+    -webkit-text-stroke: black 1px;
 }
 .section_cards{
     display: flex;
@@ -277,13 +292,23 @@
     }  
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
+
+    .competences_main h1{
+        font-size: 50px;
+    }
     .section_cards .competences_card{
         width: 35%;
         height: 250px;
         .card .card_front img{
             height: 100px;
         }
+    }
+}
+
+@media screen and (max-width:375px){
+    .section_cards .competences_card{
+        height: 200px;
     }
 }
 
@@ -298,6 +323,9 @@
         font-size: 80px;
         text-align: center;
         color: $colorGreenMint;
+        .contact_h1_word{
+            display: inline-block;
+        }
     }
     .zone_saisie{
         display: flex;
@@ -363,10 +391,10 @@
     }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
     .contact{
         h1{
-            font-size: 24px;
+            font-size: 30px;
         }
         form {
         
@@ -384,7 +412,7 @@
             width: 11px;
         }
         .zone_saisie{
-            margin: 60px auto 60px 10px;
+            margin: 60px auto 60px 30px;
 
         }
         .lettres_space{
@@ -399,9 +427,10 @@
     color: white;
     
     h1{
-        font-size: 100px;
-        margin: 80px auto 30px auto;
+        font-size: 70px;
+        margin: 100px auto 30px auto;
         text-align: center;
+        text-decoration: underline;
     }
 }
 
@@ -451,7 +480,7 @@
     }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
     .projets_main {
         h1{
             font-size: 50px;

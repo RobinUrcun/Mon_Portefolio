@@ -17,7 +17,6 @@ header .top_navbar{
         padding: 0;
     }
     li{
-        font-size: 20px;
         transition: 0.5s;
         a, a:visited{
             text-decoration: none;
@@ -39,7 +38,7 @@ header .top_navbar{
         filter: invert(1);
     }
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
     header .top_navbar{
         height: 100vh;;
         width: 50%;
@@ -63,7 +62,15 @@ header .top_navbar{
     .block_menu_deroulant{
         display: block;
     }
+}
 
+@media screen and (max-width:375px){
+    header .top_navbar ul{
+        margin: 0 0 0 10px;
+    }
+    header .top_navbar li a, header .top_navbar li a:visited{
+        font-size: 25px;
+    }
 }
 // FIN de NAV //
 

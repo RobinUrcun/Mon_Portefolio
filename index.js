@@ -51,7 +51,7 @@ block_menu_deroulant.addEventListener("click", () =>{
     nav_bar.style.left = "0"
     main.style.filter = "blur(2px)"
 })
-if(window.matchMedia("(max-width: 700px)").matches){
+if(window.matchMedia("(max-width: 800px)").matches){
     window.addEventListener("scroll", (e) =>{
         if ( window.scrollY > 200){
             button_up.style.bottom = "30px";  
@@ -174,7 +174,7 @@ for (let i = 0; i < contact_lettres.length; i++){
 
 // PAGE CONTACT //
 
-if(window.matchMedia("(max-width: 700px)").matches){
+if(window.matchMedia("(max-width: 800px)").matches){
     for ( let i = 0; i < zone_saisie_contenu.length; i++){
         zone_saisie_contenu[i].addEventListener('keydown', () =>{
             let string_number = zone_saisie_contenu[i].value.length

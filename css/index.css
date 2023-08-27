@@ -219,7 +219,6 @@ header .top_navbar ul {
   padding: 0;
 }
 header .top_navbar li {
-  font-size: 20px;
   transition: 0.5s;
 }
 header .top_navbar li a, header .top_navbar li a:visited {
@@ -241,7 +240,7 @@ header .top_navbar li a, header .top_navbar li a:visited {
   filter: invert(1);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   header .top_navbar {
     height: 100vh;
     width: 50%;
@@ -262,6 +261,14 @@ header .top_navbar li a, header .top_navbar li a:visited {
   }
   .block_menu_deroulant {
     display: block;
+  }
+}
+@media screen and (max-width: 375px) {
+  header .top_navbar ul {
+    margin: 0 0 0 10px;
+  }
+  header .top_navbar li a, header .top_navbar li a:visited {
+    font-size: 25px;
   }
 }
 footer {
@@ -393,7 +400,7 @@ footer .footer_contact ul img {
   opacity: 1;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .categorie {
     flex-direction: column;
     align-items: center;
@@ -401,7 +408,12 @@ footer .footer_contact ul img {
   }
   .categorie #label_etudes, .categorie #label_experiences {
     width: 80%;
-    font-size: 45px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .categorie #label_etudes, .categorie #label_experiences {
+    font-size: 25px;
   }
 }
 #section_etudes li, #section_experiences li {
@@ -456,9 +468,9 @@ footer .footer_contact ul img {
 }
 
 .cv_main h1 {
-  font-size: 50px;
+  font-size: 70px;
   text-align: center;
-  margin: 70px auto 0 auto;
+  margin: 70px auto 30px auto;
 }
 .cv_main article {
   width: 40%;
@@ -483,7 +495,7 @@ footer .footer_contact ul img {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.567);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .cv_main article {
     width: 100%;
     text-align: center;
@@ -492,10 +504,17 @@ footer .footer_contact ul img {
     display: none;
   }
 }
+@media screen and (max-width: 425px) {
+  .cv_main h1 {
+    font-size: 50px;
+  }
+}
 .competences_main h1 {
   font-size: 70px;
   text-align: center;
-  margin: 70px auto;
+  margin: 70px auto 30px auto;
+  color: lightblue;
+  -webkit-text-stroke: black 1px;
 }
 
 .section_cards {
@@ -552,13 +571,21 @@ footer .footer_contact ul img {
   transform: rotateY(180deg);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+  .competences_main h1 {
+    font-size: 50px;
+  }
   .section_cards .competences_card {
     width: 35%;
     height: 250px;
   }
   .section_cards .competences_card .card .card_front img {
     height: 100px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section_cards .competences_card {
+    height: 200px;
   }
 }
 .contact {
@@ -571,6 +598,9 @@ footer .footer_contact ul img {
   font-size: 80px;
   text-align: center;
   color: #17aa48;
+}
+.contact h1 .contact_h1_word {
+  display: inline-block;
 }
 .contact .zone_saisie {
   display: flex;
@@ -628,9 +658,9 @@ footer .footer_contact ul img {
   margin-right: 50px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .contact h1 {
-    font-size: 24px;
+    font-size: 30px;
   }
   .contact form label {
     font-size: 20px;
@@ -645,7 +675,7 @@ footer .footer_contact ul img {
     width: 11px;
   }
   .contact .zone_saisie {
-    margin: 60px auto 60px 10px;
+    margin: 60px auto 60px 30px;
   }
   .contact .lettres_space {
     margin-right: 10px;
@@ -656,9 +686,10 @@ footer .footer_contact ul img {
   color: white;
 }
 .projets_main h1 {
-  font-size: 100px;
-  margin: 80px auto 30px auto;
+  font-size: 70px;
+  margin: 100px auto 30px auto;
   text-align: center;
+  text-decoration: underline;
 }
 
 .projets_main section {
@@ -704,7 +735,7 @@ footer .footer_contact ul img {
   max-height: 300px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .projets_main h1 {
     font-size: 50px;
   }
@@ -737,8 +768,8 @@ footer .footer_contact ul img {
   display: inline-block;
   box-shadow: rgb(163, 118, 62) 0px 10px 10px;
   padding: 40px 0 20px;
-  margin-top: 50px;
-  font-size: 60px;
+  margin: 70px auto 30px auto;
+  font-size: 70px;
 }
 
 .index_main .premiere_section {
@@ -756,6 +787,7 @@ footer .footer_contact ul img {
   box-shadow: 0 0 10px white;
   width: 50%;
   padding: 20px 40px;
+  text-align: justify;
 }
 .index_main .premiere_section article h2 {
   text-align: center;
@@ -767,9 +799,23 @@ footer .footer_contact ul img {
   font-weight: 100;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .index_main .premiere_section article {
     width: 80%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .index_main h1 {
+    font-size: 50px;
+  }
+  .index_main .premiere_section article {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
   }
 }
 .homepage_section_menu {
@@ -814,7 +860,7 @@ footer .footer_contact ul img {
   width: 60%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .homepage_section_menu {
     flex-direction: column;
     border-radius: 0;
