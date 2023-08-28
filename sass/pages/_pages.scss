@@ -71,13 +71,13 @@
         font-size: 3vw;
         text-align: center;
         @extend .box_flash_blue;
-        span{
+        span:nth-child(3), span:nth-child(4){
             @extend .text_flash_style;
             }
-        & div:nth-child(1){
+        & span:nth-child(1){
             @extend .shadow_box_blue;
         }
-        & div:nth-child(2){
+        & span:nth-child(2){
             @extend .btn_full_effect;
         }
         & span:nth-child(3){
@@ -89,7 +89,7 @@
         
     }
     & #label_etudes{
-        div:nth-child(2){
+        span:nth-child(2){
             opacity: 1;
         }
     }

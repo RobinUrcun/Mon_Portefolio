@@ -126,7 +126,7 @@ body {
   font-weight: 400;
 }
 
-.btn_full_effect, .categorie #label_etudes div:nth-child(2), .categorie #label_experiences div:nth-child(2) {
+.btn_full_effect, .categorie #label_etudes span:nth-child(2), .categorie #label_experiences span:nth-child(2) {
   content: "";
   position: absolute;
   top: 0;
@@ -146,7 +146,7 @@ body {
   animation: Bordure_btn_style 2s linear infinite;
 }
 
-.text_flash_style, .categorie #label_etudes span, .categorie #label_experiences span, .cv_title {
+.text_flash_style, .categorie #label_etudes span:nth-child(3), .categorie #label_etudes span:nth-child(4), .categorie #label_experiences span:nth-child(3), .categorie #label_experiences span:nth-child(4), .cv_title {
   text-shadow: 0 0 0.125em rgb(97, 239, 255), 0 0 0.45em rgb(97, 239, 255);
   animation: text_btn_un_style 3s linear infinite;
   z-index: 1;
@@ -164,7 +164,7 @@ body {
   animation: none !important;
 }
 
-.shadow_box_blue, #section_etudes li .li_shadow, #section_experiences li .li_shadow, .categorie #label_etudes div:nth-child(1), .categorie #label_experiences div:nth-child(1) {
+.shadow_box_blue, #section_etudes li .li_shadow, #section_experiences li .li_shadow, .categorie #label_etudes span:nth-child(1), .categorie #label_experiences span:nth-child(1) {
   content: "";
   position: absolute;
   top: 0;
@@ -396,7 +396,7 @@ footer .footer_contact ul img {
 .categorie #label_etudes span:nth-child(3), .categorie #label_experiences span:nth-child(3) {
   animation-duration: 2s;
 }
-.categorie #label_etudes div:nth-child(2) {
+.categorie #label_etudes span:nth-child(2) {
   opacity: 1;
 }
 
