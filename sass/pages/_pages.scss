@@ -262,23 +262,34 @@
                 height: 100%;
                 backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
-                img{
+            }
+            .card_front img{
                     height: 150px;
                     width: 150px;
                 }
-            }
             .card_back{
                 background-color: rgba(128, 128, 128, 06);
                 font-size: 20px;
+                display: flex;
+                flex-direction: column;
                 font-weight: 700;
                 text-align: center;
                 position: absolute;
+
                 backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 transform: rotateY(180deg);
             }
         }
     }  
+}
+
+.star_color_gold{
+    color: gold;
+}
+
+.star_color_grey{
+    color: rgb(206, 203, 203);
 }
 
 @media screen and (max-width:800px){
@@ -307,7 +318,11 @@
         -webkit-text-stroke: black 1px;
     }
 }
-
+@media screen and (max-width:400px){
+    .grades {
+        font-size: 15px;
+    }
+}
 @media screen and (max-width:375px){
     .section_cards .competences_card{
         height: 200px;
