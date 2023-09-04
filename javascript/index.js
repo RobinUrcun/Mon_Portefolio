@@ -27,6 +27,9 @@ const homepage_card = document.querySelectorAll(".homepage_section_menu a")
 const contact_lettres = document.getElementsByClassName("lettre_delay")
 const zone_saisie_contenu = document.querySelectorAll(".zone_saisie input")
 const form_button = document.querySelector("form button")
+const projet_detail = document.getElementsByClassName("projet_detail")
+const projet_detail_icone = document.getElementsByClassName("projet_detail_icone")
+
 
 for(let i = 0; i < li_navbar.length; i++){
     li_navbar[i].addEventListener("mouseenter", () => {
@@ -195,4 +198,13 @@ else{
         
     }
     
+}
+
+// PAGE PROJETS // 
+
+for (let i = 0; i < projet_detail_icone.length; i++){
+    projet_detail_icone[i].addEventListener("click", () => {
+        projet_detail[i].classList.toggle("projet_detail_moove")
+        projet_detail_icone[i].classList.toggle("projet_detail_icone_transform")
+    })
 }
